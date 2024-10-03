@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pantasign Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      
+      <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      .box-1 {
+        position: relative;
+        width: 100%;
+        height: 100rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-image: linear-gradient(
+          to left bottom,
+          #9bcdd2,
+          #84c2db,
+          #80b5e2,
+          #91a2e1,
+          #af8cd2,
+          #b78cd1,
+          #be8cd0,
+          #c58ccf,
+          #b9a4e6,
+          #afbaf4,
+          #aecefc,
+          #b7e0ff
+        );
+      }
+
+      .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 6rem;
+        position: relative;
+      }
+      .nav-mid > ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        font-family: Google Sans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+        position: absolute;
+        left: 890px;
+        top: 60px;
+      }
+
+      .nav-mid > ul > li {
+        list-style-type: none;
+        text-decoration: none;
+        color: #fff !important;
+      }
+
+      .nav-mid > ul > li > a {
+        text-decoration: none;
+        color: #fff !important;
+      }
+
+      .vector-1 {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+      }
+
+      .abc {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 210px;
+        left: 0;
+        right: 0;
+        z-index: 123;
+        padding: 4rem 6rem;
+      }
+
+      .card {
+        position: relative;
+        width: 569px;
+        height: 554px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        border-radius: 50px;
+        opacity: 0px;
+        background-color: #fff;
+        box-shadow: 0px 4px 50px 0px #788f9c40;
+        z-index: 10000;
+      }
+
+      .line {
+        width: 120px;
+        height: 2px;
+        background-color: #e1e0e0;
+      }
+
+      .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .priceOnCard {
+        font-family: Open Sans;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 1.5rem;
+        color: #7a7a7a;
+      }
+
+      .priceTag {
+        font-family: Open Sans;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        color: #117554;
+      }
+
+      .tag {
+        width: 83px;
+        height: 35px;
+        position: absolute;
+        left: 0;
+        top: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+        background-color: #8a93e5;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        color: #fff;
+      }
+
+      .header1 {
+        font-family: Open Sans;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 65px;
+        text-align: left;
+        color: #fff;
+      }
+
+      .header2 {
+        font-family: Google Sans;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 65px;
+        text-align: left;
+        color: #fff;
+      }
+
+      .para {
+        width: 400px;
+        height: 72px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif Sans;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        color: #333;
+      }
+
+      .xyz {
+        width: 283px;
+        height: 56px;
+        border-radius: 18px 0px 0px 0px;
+      }
+
+      .shop-now {
+        width: 180px;
+        height: 56px;
+        background-color: #fff;
+        padding: 1.5rem 3.2rem;
+        border-radius: 18px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #117554;
+      }
+
+      .about {
+        font-size: 16px;
+        margin-left: 3.5rem;
+        color: #333;
+      }
+
+      .side-2 {
+        position: relative;
+      }
+
+      .slider {
+        position: absolute;
+        bottom: -68px;
+        left: 154.5px;
+      }
+
+      .scroll {
+        position: absolute;
+        bottom: 0;
+        top: 910px;
+        z-index: 1234;
+      }
+      /* All Products Text Styling */
+.all-products-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.all-products-text {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* Filter and Sort Buttons Styling */
+.filter-sort-container {
+    display: flex;
+    align-items: center;
+    margin-left: 50px; /* Align left to the corner */
+    margin-top: 20px;  /* Space below "ALL PRODUCTS" text */
+}
+
+.filter-button,
+.sort-button {
+    font-family: 'Google Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+    background-color: transparent; /* No background */
+    border: none; /* No border */
+    padding: 0;
+    border-radius: 1px 0px 0px 0px;
+    opacity: 1; /* Make buttons visible */
+    cursor: pointer;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+/* Specific styles for each button */
+.filter-button {
+    width: 169px;
+    height: 30px;
+    margin-right: 20px; /* Space between buttons */
+}
+
+.sort-button {
+    width: 157px;
+    height: 30px;
+}
+
+/* Reverse Polygon Sign Styling */
+.reverse-polygon {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid black; 
+    margin-left: 2px; 
+}
+
+/* Cart Section Styling */
+.cart-section {
+    width: 1340px;
+    height: auto; 
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cart {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 22%;
+}
+/* Buy Now Button Styling */
+.buy-now-button {
+    background-color: white; /* Sky blue background */
+    color: black; /* Text color */
+    border: 1px solid white; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding around the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Bold text */
+    margin-top: 10px;
+    text-align: center; 
+}
+
+.cart-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.cart-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.cart-price {
+    font-size: 18px;
+    font-weight: bold;
+    color:#117554;
+}
+
+/* View All Button Styling */
+.view-all-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Space between cart section and View All button */
+}
+
+.view-all-button {
+    background-color: transparent;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 2px solid skyblue; /* Sky-blue border */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for View All button */
+.view-all-button:hover {
+    background-color: skyblue;
+    color: white; /* Change text color on hover */
+}
+/* Container to hold all product details vertically but slightly left from the center */
+.product-details-container-vertical {
+    display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    justify-content: flex-start; /* Align buttons to the left slightly */
+    align-items: flex-start;
+    margin-top: 40px; /* Space below the "View All" button */
+    gap: 15px; /* Space between each button */
+    padding-left: 25%; /* Move the buttons slightly left from the center */
+}
+/* Vector background */
+.vector-background {
+    position: absolute;
+    width: 100%;
+    height: 300px; /* Adjust height based on the design */
+    background-color: white; /* White background for the vector */
+    bottom: 0;
+    z-index: 0; /* Place it behind other elements */
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%); /* Example triangle shape vector */
+}
+
+/* Best Price Button Styling with the specified criteria */
+.best-price-button {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: left;
+    align-items: center;
+    color: #31546D;
+    background-color: white;
+    padding: 5px 5px;
+    border: none;
+    width: 100%;
+    
+}
+
+/* Larger text version for the second Best Price styling */
+.best-price-button.large-text {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+/* Agate Phone Grip Button - Twice the size of Best Price */
+.product-name-button {
+    width: auto; /* Allow the button to take the necessary width instead of full width */
+    font-family: 'Google Sans', sans-serif;
+    font-size: 40px; /* Twice the size of Best Price */
+    font-weight: 700;
+    line-height: 50px; /* Adjust the line-height */
+    text-align: center; /* Align text to the left */
+    color: #31546D;
+    background-color: white; /* Dark background as requested */
+    padding: 7px;
+    border: none;
+    margin-left: 0; /* Ensure no left margin */
+    position: relative;
+    left: 0 px; /* Ensure the button starts from the very left corner */
+}
+
+
+/* Container for product description */
+.product-description-container {
+    width: 100%; /* Full width to align to the leftmost part */
+    height: auto; /* Allow height to adjust based on content */
+    background-color: white; /* Background color as requested */
+    padding: 0; /* No padding to keep it flush with other elements */
+    margin: 0; /* Remove any default margin */
+    position: relative; /* Positioning for layout if needed */
+}
+
+/* Text styling for the description */
+.product-description-text {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #31546D; /* Text color */
+    text-align: left; /* Align text to the left */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* No padding to ensure it aligns perfectly with the left */
+}
+
+/* Adjusting the button above (if applicable) */
+.button-container {
+    margin-bottom: 0; /* Ensure no extra space below the button */
+}
+
+
+/* Old and New Price Styling in the same line */
+.price-container {
+    display: flex;
+    align-items: center; /* Align prices vertically in the middle */
+    gap: 10px; /* Space between the old and new price */
+}
+
+.old-price {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color:  #41A0B7;
+    
+    text-decoration: line-through;
+}
+
+.new-price {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: red;
+}
+
+/* Product Button Styling - No borders */
+.product-button {
+    background-color: transparent;
+    border: none;
+    font-family: 'Google Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+     /* Align text left within the button */
+}
+
+/* Buy Now Button with Sky Blue Background */
+.buy-now-button {
+    background-color: skyblue;
+    color: black;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 0;
+    display: block; /* Ensure the button is displayed as a block */
+    margin: 0 ; /* Automatically adjusts margins to center the button horizontally */
+    text-align: center; /* Center the text within the button */
+}
+
+/* Hover effect for Buy Now Button */
+.buy-now-button:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+/* Footer Container */
+.footer {
+    width: 1440px;
+    height: 269px;
+    background-color: #0A294DCC; /* Background color */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    position: relative;
+    margin: 0 auto; /* Center the footer on the page */
+    top: 350px; /* Adjust based on where you want to place the footer */
+    opacity: 1; /* Ensure it is fully visible */
+}
+
+/* Footer Content Styling */
+.footer-content {
+    text-align: center;
+    color: white; /* Text color for footer content */
+    font-family: 'Google Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Container for circles */
+.circle-container {
+    position: absolute;
+    top: 2050px; /* Adjust this value to move the circles above (change from 2186px) */
+    left: calc(105% - 570px); /* To place the circles at the rightmost corner */
+    width: 570px;
+    height: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Outer circle styling with shadow */
+.outer-circle {
+    width: 570px;
+    height: 570px;
+    border-radius: 50%;
+    background-color: #FFFFFF; /* White background for the outer circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Lighter shadow for outer circle */
+}
+
+/* Inner circle styling with darker shadow */
+.inner-circle {
+    width: 364px;
+    height: 364px;
+    border-radius: 50%;
+    background-color: #FFFFFF; /* White background for the inner circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* To ensure the image fits inside the inner circle */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Darker shadow for inner circle */
+}
+
+/* Image within the inner circle */
+.circle-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+}
+.gradient-background {
+            position: absolute; /* Position it absolutely */
+            width: 1440px; /* Set width */
+            height: 603.5px; /* Set height */
+            top: 296.5px; /* Position it below the circle */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Adjust for centering */
+            background: linear-gradient(
+                to bottom,
+                #af8cd2,
+                #b78cd1,
+                #be8cd0,
+                #c58ccf,
+                #b9a4e6,
+                #afbaf4,
+                #aecefc,
+                #b7e0ff
+            ); /* Gradient background */
+            opacity: 1; /* Set opacity to 1 to make it visible */
+            z-index: 0; /* Ensure it's behind the circle */
+        }
+
+    
+  </style>
+  </head>
+  <body>
+    <div class="box-1">
+      <nav class="navbar">
+        <!-- LOGO SVG ICON -->
+        <svg
+          width="199"
+          height="64"
+          viewBox="0 0 199 64"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M48.6 24.68H53.42C54.22 24.68 54.96 24.86 55.64 25.22C56.32 25.58 56.86 26.0867 57.26 26.74C57.6733 27.38 57.88 28.1067 57.88 28.92C57.88 29.7333 57.6733 30.4667 57.26 31.12C56.86 31.76 56.32 32.26 55.64 32.62C54.96 32.98 54.22 33.16 53.42 33.16H50.28V39H48.6V24.68ZM53.46 31.54C53.9933 31.54 54.46 31.4133 54.86 31.16C55.2733 30.9067 55.5933 30.58 55.82 30.18C56.0467 29.78 56.16 29.36 56.16 28.92C56.16 28.48 56.0467 28.06 55.82 27.66C55.5933 27.26 55.2733 26.9333 54.86 26.68C54.46 26.4267 53.9933 26.3 53.46 26.3H50.28V31.54H53.46ZM63.7803 39.32C62.7803 39.32 61.8803 39.08 61.0803 38.6C60.2803 38.12 59.6536 37.4667 59.2003 36.64C58.7603 35.8133 58.5403 34.9 58.5403 33.9C58.5403 32.9 58.7603 31.9867 59.2003 31.16C59.6536 30.3333 60.2803 29.68 61.0803 29.2C61.8803 28.72 62.7803 28.48 63.7803 28.48C64.7803 28.48 65.6803 28.72 66.4803 29.2C67.2803 29.68 67.9003 30.3333 68.3403 31.16C68.7936 31.9867 69.0203 32.9 69.0203 33.9C69.0203 34.9 68.7936 35.8133 68.3403 36.64C67.9003 37.4667 67.2803 38.12 66.4803 38.6C65.6803 39.08 64.7803 39.32 63.7803 39.32ZM63.7803 37.78C64.407 37.78 64.987 37.6267 65.5203 37.32C66.067 37 66.5003 36.5467 66.8203 35.96C67.1536 35.3733 67.3203 34.6867 67.3203 33.9C67.3203 33.1133 67.1536 32.4267 66.8203 31.84C66.5003 31.2533 66.067 30.8067 65.5203 30.5C64.987 30.18 64.407 30.02 63.7803 30.02C63.1536 30.02 62.567 30.18 62.0203 30.5C61.4736 30.8067 61.0336 31.2533 60.7003 31.84C60.3803 32.4267 60.2203 33.1133 60.2203 33.9C60.2203 34.6867 60.3803 35.3733 60.7003 35.96C61.0336 36.5467 61.4736 37 62.0203 37.32C62.567 37.6267 63.1536 37.78 63.7803 37.78ZM70.8167 28.8H72.4367V30.32H72.5167C72.8234 29.8 73.2834 29.3667 73.8967 29.02C74.5234 28.66 75.2234 28.48 75.9967 28.48C76.9034 28.48 77.7301 28.7133 78.4767 29.18C79.2234 29.6467 79.8101 30.2933 80.2367 31.12C80.6634 31.9467 80.8767 32.8733 80.8767 33.9C80.8767 34.94 80.6634 35.8733 80.2367 36.7C79.8101 37.5133 79.2234 38.1533 78.4767 38.62C77.7301 39.0867 76.9034 39.32 75.9967 39.32C75.2234 39.32 74.5234 39.1467 73.8967 38.8C73.2834 38.44 72.8234 38.0067 72.5167 37.5H72.4367L72.5167 38.9V43.32H70.8167V28.8ZM75.7967 37.78C76.3834 37.78 76.9367 37.62 77.4567 37.3C77.9767 36.98 78.3901 36.5267 78.6967 35.94C79.0167 35.34 79.1767 34.66 79.1767 33.9C79.1767 33.14 79.0167 32.4667 78.6967 31.88C78.3901 31.28 77.9767 30.82 77.4567 30.5C76.9367 30.18 76.3834 30.02 75.7967 30.02C75.2101 30.02 74.6567 30.18 74.1367 30.5C73.6167 30.82 73.2034 31.2733 72.8967 31.86C72.5901 32.4467 72.4367 33.1267 72.4367 33.9C72.4367 34.6733 72.5901 35.3533 72.8967 35.94C73.2034 36.5267 73.6167 36.98 74.1367 37.3C74.6567 37.62 75.2101 37.78 75.7967 37.78ZM87.8383 24.68H92.6783C93.4649 24.68 94.1983 24.86 94.8783 25.22C95.5583 25.58 96.0983 26.0867 96.4983 26.74C96.9116 27.38 97.1183 28.1067 97.1183 28.92C97.1183 29.5867 96.9649 30.2067 96.6583 30.78C96.3649 31.3533 95.9516 31.8333 95.4183 32.22C94.8983 32.6067 94.3183 32.8667 93.6783 33L93.6383 33.06L97.6783 38.92V39H95.6783L91.7783 33.16H89.5183V39H87.8383V24.68ZM92.5783 31.58C93.0716 31.58 93.5316 31.4667 93.9583 31.24C94.3983 31.0133 94.7449 30.7 94.9983 30.3C95.2649 29.8867 95.3983 29.4267 95.3983 28.92C95.3983 28.48 95.2849 28.06 95.0583 27.66C94.8316 27.26 94.5116 26.9333 94.0983 26.68C93.6983 26.4267 93.2316 26.3 92.6983 26.3H89.5183V31.58H92.5783ZM103.722 39.32C102.722 39.32 101.822 39.08 101.022 38.6C100.222 38.12 99.5951 37.4667 99.1417 36.64C98.7017 35.8133 98.4817 34.9 98.4817 33.9C98.4817 32.9 98.7017 31.9867 99.1417 31.16C99.5951 30.3333 100.222 29.68 101.022 29.2C101.822 28.72 102.722 28.48 103.722 28.48C104.722 28.48 105.622 28.72 106.422 29.2C107.222 29.68 107.842 30.3333 108.282 31.16C108.735 31.9867 108.962 32.9 108.962 33.9C108.962 34.9 108.735 35.8133 108.282 36.64C107.842 37.4667 107.222 38.12 106.422 38.6C105.622 39.08 104.722 39.32 103.722 39.32ZM103.722 37.78C104.348 37.78 104.928 37.6267 105.462 37.32C106.008 37 106.442 36.5467 106.762 35.96C107.095 35.3733 107.262 34.6867 107.262 33.9C107.262 33.1133 107.095 32.4267 106.762 31.84C106.442 31.2533 106.008 30.8067 105.462 30.5C104.928 30.18 104.348 30.02 103.722 30.02C103.095 30.02 102.508 30.18 101.962 30.5C101.415 30.8067 100.975 31.2533 100.642 31.84C100.322 32.4267 100.162 33.1133 100.162 33.9C100.162 34.6867 100.322 35.3733 100.642 35.96C100.975 36.5467 101.415 37 101.962 37.32C102.508 37.6267 103.095 37.78 103.722 37.78ZM115.556 39.32C114.569 39.32 113.682 39.0867 112.896 38.62C112.109 38.14 111.496 37.4933 111.056 36.68C110.616 35.8533 110.396 34.9267 110.396 33.9C110.396 32.8733 110.616 31.9467 111.056 31.12C111.496 30.2933 112.109 29.6467 112.896 29.18C113.682 28.7133 114.569 28.48 115.556 28.48C116.662 28.48 117.589 28.74 118.336 29.26C119.096 29.7667 119.636 30.4467 119.956 31.3L118.416 31.94C118.162 31.3133 117.782 30.84 117.276 30.52C116.782 30.1867 116.182 30.02 115.476 30.02C114.876 30.02 114.316 30.1867 113.796 30.52C113.276 30.84 112.856 31.2933 112.536 31.88C112.229 32.4667 112.076 33.14 112.076 33.9C112.076 34.66 112.229 35.3333 112.536 35.92C112.856 36.5067 113.276 36.9667 113.796 37.3C114.316 37.62 114.876 37.78 115.476 37.78C116.196 37.78 116.816 37.6133 117.336 37.28C117.856 36.9467 118.242 36.4733 118.496 35.86L120.016 36.5C119.669 37.34 119.109 38.02 118.336 38.54C117.576 39.06 116.649 39.32 115.556 39.32ZM121.854 24.68H123.554V33.68L128.354 28.8H130.514V28.88L126.514 32.92L130.614 38.92V39H128.594L125.314 34.1L123.554 35.86V39H121.854V24.68ZM143.269 39.32C141.883 39.32 140.623 38.9933 139.489 38.34C138.356 37.6867 137.463 36.7933 136.809 35.66C136.169 34.5133 135.849 33.24 135.849 31.84C135.849 30.44 136.169 29.1733 136.809 28.04C137.463 26.8933 138.356 25.9933 139.489 25.34C140.623 24.6867 141.883 24.36 143.269 24.36C144.336 24.36 145.309 24.5667 146.189 24.98C147.083 25.38 147.856 25.9533 148.509 26.7L147.289 27.88C146.743 27.2267 146.143 26.7467 145.489 26.44C144.849 26.1333 144.109 25.98 143.269 25.98C142.229 25.98 141.276 26.2267 140.409 26.72C139.543 27.2 138.849 27.8867 138.329 28.78C137.823 29.66 137.569 30.68 137.569 31.84C137.569 33 137.823 34.0267 138.329 34.92C138.849 35.8 139.543 36.4867 140.409 36.98C141.276 37.46 142.229 37.7 143.269 37.7C145.003 37.7 146.476 36.9867 147.689 35.56L148.929 36.76C148.263 37.5467 147.443 38.1733 146.469 38.64C145.496 39.0933 144.429 39.32 143.269 39.32ZM150.838 28.8H152.458V30.44H152.538C152.738 29.88 153.125 29.42 153.698 29.06C154.271 28.6867 154.871 28.5 155.498 28.5C155.965 28.5 156.365 28.5667 156.698 28.7V30.54C156.271 30.3267 155.791 30.22 155.258 30.22C154.765 30.22 154.311 30.36 153.898 30.64C153.485 30.92 153.151 31.3 152.898 31.78C152.658 32.2467 152.538 32.7533 152.538 33.3V39H150.838V28.8ZM161.907 38.36L157.687 28.8H159.527L162.727 36.38H162.767L165.847 28.8H167.687L161.387 43.32H159.627L161.907 38.36ZM172.465 39.32C171.371 39.32 170.458 39.0667 169.725 38.56C168.991 38.04 168.471 37.38 168.165 36.58L169.685 35.9C169.938 36.5133 170.311 36.9867 170.805 37.32C171.311 37.6533 171.865 37.82 172.465 37.82C173.105 37.82 173.651 37.6933 174.105 37.44C174.558 37.1733 174.785 36.8 174.785 36.32C174.785 35.8933 174.605 35.5533 174.245 35.3C173.885 35.0333 173.318 34.8067 172.545 34.62L171.305 34.3C170.491 34.1 169.825 33.76 169.305 33.28C168.785 32.8 168.525 32.18 168.525 31.42C168.525 30.8333 168.698 30.32 169.045 29.88C169.405 29.4267 169.878 29.08 170.465 28.84C171.051 28.6 171.685 28.48 172.365 28.48C173.258 28.48 174.051 28.6733 174.745 29.06C175.451 29.4467 175.951 29.9867 176.245 30.68L174.765 31.36C174.311 30.4533 173.505 30 172.345 30C171.785 30 171.291 30.1333 170.865 30.4C170.451 30.6533 170.245 30.98 170.245 31.38C170.245 31.7533 170.391 32.06 170.685 32.3C170.978 32.5267 171.418 32.7133 172.005 32.86L173.485 33.24C174.485 33.4933 175.238 33.8733 175.745 34.38C176.251 34.8733 176.505 35.48 176.505 36.2C176.505 36.8267 176.325 37.38 175.965 37.86C175.605 38.3267 175.118 38.6867 174.505 38.94C173.891 39.1933 173.211 39.32 172.465 39.32ZM182.18 39.16C181.767 39.16 181.38 39.0933 181.02 38.96C180.673 38.8267 180.38 38.6467 180.14 38.42C179.873 38.1667 179.673 37.8733 179.54 37.54C179.407 37.2067 179.34 36.8 179.34 36.32V30.34H177.56V28.8H179.34V25.92H181.04V28.8H183.52V30.34H181.04V35.9C181.04 36.46 181.147 36.8733 181.36 37.14C181.613 37.4333 181.98 37.58 182.46 37.58C182.847 37.58 183.22 37.4667 183.58 37.24V38.9C183.38 38.9933 183.173 39.06 182.96 39.1C182.76 39.14 182.5 39.16 182.18 39.16ZM188.649 39.32C187.902 39.32 187.236 39.1733 186.649 38.88C186.062 38.5867 185.609 38.1867 185.289 37.68C184.969 37.16 184.809 36.5733 184.809 35.92C184.809 34.84 185.216 34 186.029 33.4C186.842 32.7867 187.869 32.48 189.109 32.48C189.722 32.48 190.289 32.5467 190.809 32.68C191.342 32.8133 191.749 32.9667 192.029 33.14V32.52C192.029 31.76 191.762 31.1533 191.229 30.7C190.696 30.2333 190.022 30 189.209 30C188.636 30 188.109 30.1267 187.629 30.38C187.149 30.62 186.769 30.96 186.489 31.4L185.209 30.44C185.609 29.8267 186.156 29.3467 186.849 29C187.556 28.6533 188.336 28.48 189.189 28.48C190.576 28.48 191.662 28.8467 192.449 29.58C193.249 30.3 193.649 31.2867 193.649 32.54V39H192.029V37.54H191.949C191.656 38.0333 191.216 38.4533 190.629 38.8C190.042 39.1467 189.382 39.32 188.649 39.32ZM188.809 37.82C189.382 37.82 189.916 37.6733 190.409 37.38C190.902 37.0867 191.296 36.6933 191.589 36.2C191.882 35.7067 192.029 35.1667 192.029 34.58C191.709 34.3667 191.316 34.1933 190.849 34.06C190.382 33.9267 189.889 33.86 189.369 33.86C188.436 33.86 187.729 34.0533 187.249 34.44C186.782 34.8267 186.549 35.3267 186.549 35.94C186.549 36.5 186.762 36.9533 187.189 37.3C187.616 37.6467 188.156 37.82 188.809 37.82ZM196.014 24.68H197.714V39H196.014V24.68Z"
+            fill="white"
+          />
+          <g clip-path="url(#clip0_1_52)">
+            <path
+              d="M18.5219 0C8.29537 0 0 8.44103 0 18.8472V45.1975C0 55.6036 8.29537 64.0447 18.5219 64.0447C28.7485 64.0447 37.0439 55.6036 37.0439 45.1975V18.8472C37 8.44103 28.7046 0 18.5219 0ZM35.5516 45.1975C35.5516 54.7551 27.9146 62.5262 18.5219 62.5262C9.1293 62.5262 1.49229 54.7551 1.49229 45.1975V18.8472C1.49229 9.2896 9.1293 1.51849 18.5219 1.51849C27.9146 1.51849 35.5516 9.2896 35.5516 18.8472V45.1975Z"
+              fill="white"
+            />
+            <path
+              d="M12.7725 22.4201L24.7108 36.8904L31.8211 28.2708L26.0275 22.4201H12.7725ZM23.9646 23.8939L19.6195 28.3154L15.9765 23.8939H23.9646ZM24.7108 34.5234L20.5412 29.4766L25.7203 24.2066L29.7582 28.3154L24.7108 34.5234Z"
+              fill="white"
+            />
+            <path
+              d="M5.22313 28.2707L18.5221 44.4382L23.5695 38.3196L10.7095 22.688L5.22313 28.2707ZM18.5221 42.0712L7.19822 28.3601L10.5778 24.9211L21.5944 38.3196L18.5221 42.0712Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_1_52">
+              <rect width="37" height="64" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <!-- NAVBAR MIDDLE PART -->
+        <div class="nav-mid">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+        <!-- SHOPPING CART SVG ICON -->
+        <svg
+          width="50"
+          height="30"
+          viewBox="0 0 50 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M44.8502 11.25H41.0937L35.75 4.125C35.6626 4.00857 35.5494 3.91406 35.4192 3.84897C35.289 3.78389 35.1455 3.75 35 3.75C34.8544 3.75 34.7109 3.78389 34.5807 3.84897C34.4505 3.91406 34.3373 4.00857 34.25 4.125L28.9062 11.25H25.1498C24.6444 11.2492 24.1594 11.4489 23.8011 11.8052C23.4428 12.1616 23.2405 12.6455 23.2384 13.1508C23.2373 13.3294 23.2632 13.5072 23.3152 13.6781L26.0263 23.2371C26.2026 23.8601 26.5776 24.4085 27.0941 24.7989C27.6107 25.1893 28.2406 25.4003 28.888 25.3998H41.1119C41.7594 25.3978 42.3889 25.1864 42.9064 24.7971C43.4239 24.4079 43.8015 23.8616 43.983 23.24L46.6976 13.6682C46.7101 13.6228 46.7192 13.5766 46.7246 13.5299L46.7556 13.241C46.7591 13.2109 46.7609 13.1805 46.7609 13.1502C46.7587 12.6451 46.5564 12.1614 46.1982 11.8052C45.8401 11.449 45.3553 11.2494 44.8502 11.25ZM35 6.2502L38.75 11.25H31.25L35 6.2502ZM35 20.6057C34.5635 20.6036 34.1375 20.4723 33.7756 20.2283C33.4137 19.9843 33.1322 19.6386 32.9667 19.2347C32.8011 18.8309 32.7588 18.3871 32.8453 17.9593C32.9317 17.5315 33.1429 17.1389 33.4522 16.831C33.7616 16.5231 34.1552 16.3138 34.5834 16.2294C35.0116 16.145 35.4552 16.1894 35.8583 16.3569C36.2613 16.5244 36.6057 16.8075 36.8479 17.1705C37.0902 17.5336 37.2195 17.9602 37.2195 18.3967C37.2162 18.9831 36.9809 19.5445 36.565 19.958C36.1491 20.3715 35.5864 20.6035 35 20.6033V20.6057Z"
+            fill="white"
+          />
+          <circle cx="7" cy="15" r="7" fill="#FF2B77" />
+          <path
+            d="M4.29756 18.128C3.8389 18.128 3.43623 18.0053 3.08956 17.76C2.7429 17.5093 2.47356 17.168 2.28156 16.736C2.0949 16.2987 2.00156 15.808 2.00156 15.264C2.00156 14.72 2.0949 14.232 2.28156 13.8C2.47356 13.3627 2.7429 13.0213 3.08956 12.776C3.43623 12.5253 3.8389 12.4 4.29756 12.4C4.75623 12.4 5.1589 12.5253 5.50556 12.776C5.85223 13.0213 6.1189 13.3627 6.30556 13.8C6.49756 14.232 6.59356 14.72 6.59356 15.264C6.59356 15.808 6.49756 16.2987 6.30556 16.736C6.1189 17.168 5.85223 17.5093 5.50556 17.76C5.1589 18.0053 4.75623 18.128 4.29756 18.128ZM4.29756 17.144C4.55356 17.144 4.7749 17.064 4.96156 16.904C5.15356 16.7387 5.29756 16.5147 5.39356 16.232C5.4949 15.944 5.54556 15.6213 5.54556 15.264C5.54556 14.7093 5.43356 14.2587 5.20956 13.912C4.98556 13.56 4.68156 13.384 4.29756 13.384C3.9189 13.384 3.61756 13.56 3.39356 13.912C3.16956 14.264 3.05756 14.7147 3.05756 15.264C3.05756 15.6213 3.10556 15.944 3.20156 16.232C3.3029 16.5147 3.4469 16.7387 3.63356 16.904C3.82556 17.064 4.0469 17.144 4.29756 17.144ZM9.696 18.128C9.23733 18.128 8.83467 18.0053 8.488 17.76C8.14133 17.5093 7.872 17.168 7.68 16.736C7.49333 16.2987 7.4 15.808 7.4 15.264C7.4 14.72 7.49333 14.232 7.68 13.8C7.872 13.3627 8.14133 13.0213 8.488 12.776C8.83467 12.5253 9.23733 12.4 9.696 12.4C10.1547 12.4 10.5573 12.5253 10.904 12.776C11.2507 13.0213 11.5173 13.3627 11.704 13.8C11.896 14.232 11.992 14.72 11.992 15.264C11.992 15.808 11.896 16.2987 11.704 16.736C11.5173 17.168 11.2507 17.5093 10.904 17.76C10.5573 18.0053 10.1547 18.128 9.696 18.128ZM9.696 17.144C9.952 17.144 10.1733 17.064 10.36 16.904C10.552 16.7387 10.696 16.5147 10.792 16.232C10.8933 15.944 10.944 15.6213 10.944 15.264C10.944 14.7093 10.832 14.2587 10.608 13.912C10.384 13.56 10.08 13.384 9.696 13.384C9.31733 13.384 9.016 13.56 8.792 13.912C8.568 14.264 8.456 14.7147 8.456 15.264C8.456 15.6213 8.504 15.944 8.6 16.232C8.70133 16.5147 8.84533 16.7387 9.032 16.904C9.224 17.064 9.44533 17.144 9.696 17.144Z"
+            fill="white"
+          />
+        </svg>
+      </nav>
+
+      <!-- VECTOR - 1 -->
+      <div><img src="image.png" alt="alt" class="vector-1" /></div>
+      <div class="abc">
+        <div class="side-1">
+          <h3 class="header1">Welcome to</h3>
+          <h1 class="header2">Pop Rock Crystal Shop!</h1>
+          <p class="para">
+            Here you will find unique phone accessories, crystals, jewelry and
+            more. Free shipping inside the U.S. and our phone grips come with a
+            limited warranty. Enjoy!
+          </p>
+          <div class="xyz">
+            <span class="shop-now">SHOP NOW</span>
+            <span class="about">about us</span>
+          </div>
+        </div>
+        <div class="side-2">
+          <div class="card">
+            <div class="image">
+              <img src="cardimg.png" alt="cardimg" width="362" height="362" />
+              <div class="line"></div>
+              <p class="priceOnCard">
+                Crystal Agate Phone Grip - <span class="priceTag">18.99$</span>
+              </p>
+            </div>
+            <h3 class="tag">New lot</h3>
+          </div>
+          <svg
+            width="260"
+            height="36"
+            class="slider"
+            viewBox="0 0 260 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_1_60)" filter="url(#filter0_d_1_60)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9 2C8.20435 2 7.44129 2.31607 6.87868 2.87868C6.31607 3.44129 6 4.20435 6 5L6 23C6 23.7956 6.31607 24.5587 6.87868 25.1213C7.44129 25.6839 8.20435 26 9 26H27C27.7956 26 28.5587 25.6839 29.1213 25.1213C29.6839 24.5587 30 23.7956 30 23V5C30 4.20435 29.6839 3.44129 29.1213 2.87868C28.5587 2.31607 27.7956 2 27 2H9ZM18.531 17.969C18.6718 18.1098 18.7509 18.3008 18.7509 18.5C18.7509 18.6992 18.6718 18.8902 18.531 19.031C18.3902 19.1718 18.1992 19.2509 18 19.2509C17.8008 19.2509 17.6098 19.1718 17.469 19.031L12.969 14.531C12.8992 14.4613 12.8437 14.3786 12.8059 14.2874C12.7681 14.1963 12.7487 14.0987 12.7487 14C12.7487 13.9013 12.7681 13.8037 12.8059 13.7125C12.8437 13.6214 12.8992 13.5387 12.969 13.469L17.469 8.969C17.5387 8.89927 17.6215 8.84395 17.7126 8.80621C17.8037 8.76848 17.9014 8.74905 18 8.74905C18.0986 8.74905 18.1963 8.76848 18.2874 8.80621C18.3785 8.84395 18.4613 8.89927 18.531 8.969C18.6007 9.03873 18.656 9.12152 18.6938 9.21262C18.7315 9.30373 18.7509 9.40138 18.7509 9.5C18.7509 9.59862 18.7315 9.69627 18.6938 9.78738C18.656 9.87848 18.6007 9.96127 18.531 10.031L15.3105 13.25H22.5C22.6989 13.25 22.8897 13.329 23.0303 13.4697C23.171 13.6103 23.25 13.8011 23.25 14C23.25 14.1989 23.171 14.3897 23.0303 14.5303C22.8897 14.671 22.6989 14.75 22.5 14.75H15.3105L18.531 17.969Z"
+                fill="#8A93E5"
+              />
+            </g>
+            <g clip-path="url(#clip1_1_60)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M257 2C257.796 2 258.559 2.31607 259.121 2.87868C259.684 3.44129 260 4.20435 260 5V23C260 23.7956 259.684 24.5587 259.121 25.1213C258.559 25.6839 257.796 26 257 26H239C238.204 26 237.441 25.6839 236.879 25.1213C236.316 24.5587 236 23.7956 236 23V5C236 4.20435 236.316 3.44129 236.879 2.87868C237.441 2.31607 238.204 2 239 2H257ZM247.469 17.969C247.328 18.1098 247.249 18.3008 247.249 18.5C247.249 18.6992 247.328 18.8902 247.469 19.031C247.61 19.1718 247.801 19.2509 248 19.2509C248.199 19.2509 248.39 19.1718 248.531 19.031L253.031 14.531C253.101 14.4613 253.156 14.3786 253.194 14.2874C253.232 14.1963 253.251 14.0987 253.251 14C253.251 13.9013 253.232 13.8037 253.194 13.7125C253.156 13.6214 253.101 13.5387 253.031 13.469L248.531 8.969C248.461 8.89927 248.378 8.84395 248.287 8.80621C248.196 8.76848 248.099 8.74905 248 8.74905C247.901 8.74905 247.804 8.76848 247.713 8.80621C247.622 8.84395 247.539 8.89927 247.469 8.969C247.399 9.03873 247.344 9.12152 247.306 9.21262C247.268 9.30373 247.249 9.40138 247.249 9.5C247.249 9.59862 247.268 9.69627 247.306 9.78738C247.344 9.87848 247.399 9.96127 247.469 10.031L250.69 13.25H243.5C243.301 13.25 243.11 13.329 242.97 13.4697C242.829 13.6103 242.75 13.8011 242.75 14C242.75 14.1989 242.829 14.3897 242.97 14.5303C243.11 14.671 243.301 14.75 243.5 14.75H250.69L247.469 17.969Z"
+                fill="#8A93E5"
+              />
+            </g>
+            <circle cx="61" cy="14" r="7" fill="#8A93E5" />
+            <circle cx="85" cy="14" r="7" fill="#D7DBFF" />
+            <circle cx="109" cy="14" r="7" fill="#D7DBFF" />
+            <circle cx="133" cy="14" r="7" fill="#D7DBFF" />
+            <circle cx="157" cy="14" r="7" fill="#D7DBFF" />
+            <circle cx="181" cy="14" r="7" fill="#D7DBFF" />
+            <circle cx="205" cy="14" r="7" fill="#D7DBFF" />
+            <defs>
+              <filter
+                id="filter0_d_1_60"
+                x="0"
+                y="0"
+                width="36"
+                height="36"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dy="4" />
+                <feGaussianBlur stdDeviation="3" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0.541176 0 0 0 0 0.576471 0 0 0 0 0.898039 0 0 0 0.15 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_1_60"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_1_60"
+                  result="shape"
+                />
+              </filter>
+              <clipPath id="clip0_1_60">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(6 2)"
+                />
+              </clipPath>
+              <clipPath id="clip1_1_60">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="matrix(-1 0 0 1 260 2)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <svg
+        width="121"
+        height="38"
+        class="scroll"
+        viewBox="0 0 121 38"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M48 24.256C47.0613 24.256 46.2933 24.0533 45.696 23.648C45.0987 23.232 44.6773 22.704 44.432 22.064L46 21.376C46.192 21.8027 46.4587 22.128 46.8 22.352C47.152 22.576 47.552 22.688 48 22.688C48.4373 22.688 48.8053 22.6133 49.104 22.464C49.4027 22.304 49.552 22.0693 49.552 21.76C49.552 21.4613 49.424 21.2267 49.168 21.056C48.912 20.8853 48.5173 20.736 47.984 20.608L47.008 20.368C46.3573 20.208 45.8187 19.9253 45.392 19.52C44.9653 19.1147 44.752 18.6027 44.752 17.984C44.752 17.504 44.8907 17.0827 45.168 16.72C45.456 16.3573 45.84 16.08 46.32 15.888C46.8 15.6853 47.3227 15.584 47.888 15.584C48.6453 15.584 49.312 15.7387 49.888 16.048C50.464 16.3467 50.88 16.784 51.136 17.36L49.6 18.032C49.2907 17.4027 48.7253 17.088 47.904 17.088C47.5093 17.088 47.1787 17.168 46.912 17.328C46.6453 17.488 46.512 17.696 46.512 17.952C46.512 18.1973 46.6133 18.4 46.816 18.56C47.0187 18.7093 47.3173 18.8373 47.712 18.944L48.912 19.248C49.712 19.4507 50.3147 19.76 50.72 20.176C51.136 20.5813 51.344 21.0827 51.344 21.68C51.344 22.192 51.1947 22.6453 50.896 23.04C50.608 23.424 50.208 23.7227 49.696 23.936C49.184 24.1493 48.6187 24.256 48 24.256ZM52.7896 15.84H54.4696V17.04H54.5496C54.731 16.624 55.0456 16.2827 55.4936 16.016C55.9416 15.7387 56.4163 15.6 56.9176 15.6C57.3123 15.6 57.643 15.6533 57.9096 15.76V17.584C57.4403 17.4133 57.019 17.328 56.6456 17.328C56.2403 17.328 55.8776 17.4347 55.5576 17.648C55.2483 17.8613 55.003 18.1493 54.8216 18.512C54.6403 18.864 54.5496 19.2533 54.5496 19.68V24H52.7896V15.84ZM62.598 24.256C61.7767 24.256 61.0407 24.0693 60.39 23.696C59.7393 23.312 59.2327 22.7893 58.87 22.128C58.5073 21.4667 58.326 20.7307 58.326 19.92C58.326 19.1093 58.5073 18.3733 58.87 17.712C59.2327 17.0507 59.7393 16.5333 60.39 16.16C61.0407 15.776 61.7767 15.584 62.598 15.584C63.4193 15.584 64.1553 15.776 64.806 16.16C65.4567 16.544 65.9633 17.0667 66.326 17.728C66.6887 18.3893 66.87 19.12 66.87 19.92C66.87 20.7307 66.6887 21.4667 66.326 22.128C65.9633 22.7893 65.4567 23.312 64.806 23.696C64.1553 24.0693 63.4193 24.256 62.598 24.256ZM62.598 22.64C63.046 22.64 63.462 22.5333 63.846 22.32C64.23 22.096 64.534 21.7813 64.758 21.376C64.9927 20.96 65.11 20.4747 65.11 19.92C65.11 19.3653 64.9927 18.8853 64.758 18.48C64.534 18.0747 64.23 17.7653 63.846 17.552C63.462 17.328 63.046 17.216 62.598 17.216C62.15 17.216 61.734 17.328 61.35 17.552C60.966 17.7653 60.6567 18.0747 60.422 18.48C60.198 18.8853 60.086 19.3653 60.086 19.92C60.086 20.4747 60.198 20.96 60.422 21.376C60.6567 21.7813 60.966 22.096 61.35 22.32C61.734 22.5333 62.15 22.64 62.598 22.64ZM68.4146 12.544H70.1746V24H68.4146V12.544ZM72.2428 12.544H74.0028V24H72.2428V12.544ZM83.3089 24.256C82.5729 24.256 81.9062 24.0693 81.3089 23.696C80.7115 23.3227 80.2369 22.8107 79.8849 22.16C79.5435 21.4987 79.3729 20.752 79.3729 19.92C79.3729 19.088 79.5435 18.3467 79.8849 17.696C80.2369 17.0347 80.7115 16.5173 81.3089 16.144C81.9062 15.7707 82.5729 15.584 83.3089 15.584C83.8849 15.584 84.4022 15.712 84.8609 15.968C85.3195 16.224 85.6662 16.5387 85.9009 16.912H85.9809L85.9009 15.76V12.544H87.6609V24H85.9809V22.944H85.9009C85.6662 23.3067 85.3195 23.616 84.8609 23.872C84.4022 24.128 83.8849 24.256 83.3089 24.256ZM83.5649 22.64C83.9915 22.64 84.3862 22.528 84.7489 22.304C85.1222 22.08 85.4209 21.76 85.6449 21.344C85.8689 20.928 85.9809 20.4533 85.9809 19.92C85.9809 19.3867 85.8689 18.9173 85.6449 18.512C85.4209 18.096 85.1222 17.776 84.7489 17.552C84.3862 17.328 83.9915 17.216 83.5649 17.216C83.1382 17.216 82.7382 17.328 82.3649 17.552C81.9915 17.776 81.6929 18.096 81.4689 18.512C81.2449 18.9173 81.1329 19.3867 81.1329 19.92C81.1329 20.4533 81.2449 20.928 81.4689 21.344C81.6929 21.76 81.9915 22.08 82.3649 22.304C82.7382 22.528 83.1382 22.64 83.5649 22.64ZM93.4574 24.256C92.636 24.256 91.9 24.0693 91.2494 23.696C90.5987 23.312 90.092 22.7893 89.7294 22.128C89.3667 21.4667 89.1854 20.7307 89.1854 19.92C89.1854 19.1093 89.3667 18.3733 89.7294 17.712C90.092 17.0507 90.5987 16.5333 91.2494 16.16C91.9 15.776 92.636 15.584 93.4574 15.584C94.2787 15.584 95.0147 15.776 95.6654 16.16C96.316 16.544 96.8227 17.0667 97.1854 17.728C97.548 18.3893 97.7294 19.12 97.7294 19.92C97.7294 20.7307 97.548 21.4667 97.1854 22.128C96.8227 22.7893 96.316 23.312 95.6654 23.696C95.0147 24.0693 94.2787 24.256 93.4574 24.256ZM93.4574 22.64C93.9054 22.64 94.3214 22.5333 94.7054 22.32C95.0894 22.096 95.3934 21.7813 95.6174 21.376C95.852 20.96 95.9694 20.4747 95.9694 19.92C95.9694 19.3653 95.852 18.8853 95.6174 18.48C95.3934 18.0747 95.0894 17.7653 94.7054 17.552C94.3214 17.328 93.9054 17.216 93.4574 17.216C93.0094 17.216 92.5934 17.328 92.2094 17.552C91.8254 17.7653 91.516 18.0747 91.2814 18.48C91.0574 18.8853 90.9454 19.3653 90.9454 19.92C90.9454 20.4747 91.0574 20.96 91.2814 21.376C91.516 21.7813 91.8254 22.096 92.2094 22.32C92.5934 22.5333 93.0094 22.64 93.4574 22.64ZM98.2839 15.84H100.188L101.836 21.68H101.9L103.74 15.84H105.548L107.372 21.68H107.436L109.084 15.84H110.956L108.348 24H106.492L104.62 18.144H104.572L102.716 24H100.892L98.2839 15.84ZM112.087 15.84H113.767V16.912H113.847C114.081 16.528 114.428 16.2133 114.887 15.968C115.356 15.712 115.852 15.584 116.375 15.584C117.367 15.584 118.119 15.8773 118.631 16.464C119.153 17.04 119.415 17.8293 119.415 18.832V24H117.655V19.072C117.655 18.432 117.495 17.9627 117.175 17.664C116.865 17.3653 116.433 17.216 115.879 17.216C115.484 17.216 115.132 17.328 114.823 17.552C114.513 17.7653 114.273 18.0533 114.103 18.416C113.932 18.7787 113.847 19.168 113.847 19.584V24H112.087V15.84Z"
+          fill="#317189"
+        />
+        <path
+          d="M14 7C13.6906 7 13.3938 7.12291 13.175 7.3417C12.9562 7.5605 12.8333 7.85724 12.8333 8.16666V10.5C12.8333 10.8094 12.9562 11.1062 13.175 11.325C13.3938 11.5437 13.6906 11.6667 14 11.6667C14.3094 11.6667 14.6061 11.5437 14.8249 11.325C15.0437 11.1062 15.1666 10.8094 15.1666 10.5V8.16666C15.1666 7.85724 15.0437 7.5605 14.8249 7.3417C14.6061 7.12291 14.3094 7 14 7ZM14 2.33333C11.834 2.33333 9.75682 3.19374 8.22527 4.72529C6.69373 6.25684 5.83331 8.33406 5.83331 10.5V17.5C5.83331 19.6659 6.69373 21.7432 8.22527 23.2747C9.75682 24.8062 11.834 25.6667 14 25.6667C16.1659 25.6667 18.2431 24.8062 19.7747 23.2747C21.3062 21.7432 22.1666 19.6659 22.1666 17.5V10.5C22.1666 8.33406 21.3062 6.25684 19.7747 4.72529C18.2431 3.19374 16.1659 2.33333 14 2.33333ZM19.8333 17.5C19.8333 19.0471 19.2187 20.5308 18.1248 21.6248C17.0308 22.7187 15.5471 23.3333 14 23.3333C12.4529 23.3333 10.9692 22.7187 9.87519 21.6248C8.78123 20.5308 8.16665 19.0471 8.16665 17.5V10.5C8.16665 8.9529 8.78123 7.46917 9.87519 6.37521C10.9692 5.28124 12.4529 4.66666 14 4.66666C15.5471 4.66666 17.0308 5.28124 18.1248 6.37521C19.2187 7.46917 19.8333 8.9529 19.8333 10.5V17.5Z"
+          fill="#307189"
+        />
+        <path
+          d="M14.866 36.5C14.4811 37.1667 13.5189 37.1667 13.134 36.5L12.2679 35C11.883 34.3333 12.3642 33.5 13.134 33.5L14.866 33.5C15.6358 33.5 16.117 34.3333 15.7321 35L14.866 36.5Z"
+          fill="#307189"
+        />
+      </svg>
+    </div>
+    <!-- All Products Text in the Middle -->
+<div class="all-products-container">
+  <span class="all-products-text">All Product</span>
+</div>
+
+<!-- Filter and Sort Buttons with Reverse Polygon Signs -->
+<div class="filter-sort-container">
+  <button class="filter-button">
+      Filter:All Product <span class="reverse-polygon"></span>
+  </button>
+  <button class="sort-button">
+      Sort:Best Selling <span class="reverse-polygon"></span>
+  </button>
+</div>
+
+<!-- Cart Section -->
+<div class="cart-section">
+  <div class="cart-row">
+      <div class="cart">
+          <img src="image1.png" alt="Product 1" class="cart-image">
+          <p class="cart-description">CRYSTAL AGATE PHONE GRIP</p>
+          <p class="cart-price">18.99$</p>
+          <button class="buy-now-button">BUY NOW</button>
+      </div>
+      <div class="cart">
+          <img src="image2.png" alt="Product 2" class="cart-image">
+          <p class="cart-description">CRYSTAL AGATE PHONE GRIP</p>
+          <p class="cart-price">18.99$</p>
+          <button class="buy-now-button">BUY NOW</button>
+      </div>
+      <div class="cart">
+          <img src="image3.png" alt="Product 3" class="cart-image">
+          <p class="cart-description">CRYSTAL AGATE PHONE GRIP</p>
+          <p class="cart-price">18.99$</p>
+          <button class="buy-now-button">BUY NOW</button>
+      </div>
+      <div class="cart">
+          <img src="image4.png" alt="Product 4" class="cart-image">
+          <p class="cart-description">CRYSTAL AGATE PHONE GRIP</p>
+          <p class="cart-price">18.99$</p>
+          <button class="buy-now-button">BUY NOW</button>
+      </div>
+  </div>
+  
+  <div class="cart-row">
+      <div class="cart">
+          <img src="image5.png" alt="Product 5" class="cart-image">
+          <p class="cart-description">CRYSTAL AGATE PHONE GRIP</p>
+          <p class="cart-price">18.99$</p>
+          <button class="buy-now-button">BUY NOW</button>
+      </div>
+      <div class="cart">
+          <img src="image6.png" alt="Product 6" class="cart-image">
+          <p class="cart-description">CRYSTAL AGATE PHONE GRIP</p>
+          <p class="cart-price">18.99$</p>
+          <button class="buy-now-button">BUY NOW</button>
+      </div>
+      <div class="cart">
+          <img src="image7.png" alt="Product 7" class="cart-image">
+          <p class="cart-description">CRYSTAL AGATE PHONE GRIP</p>
+          <p class="cart-price">18.99$</p>
+          <button class="buy-now-button">BUY NOW</button>
+      </div>
+      <div class="cart">
+          <img src="image8.png" alt="Product 8" class="cart-image">
+          <p class="cart-description">CRYSTAL AGATE PHONE GRIP</p>
+          <p class="cart-price">18.99$</p>
+          <button class="buy-now-button">BUY NOW</button>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <!-- Vector background -->
+  <div class="vector-background"></div>
+<!-- View All Button in the Middle Below Cart Section -->
+<div class="view-all-container">
+  <button class="view-all-button">VIEW ALL</button>
+</div>
+<!-- Product Details Section (Displayed Vertically) -->
+<div class="product-details-container-vertical">
+  <!-- Best Price Button -->
+  <button class="best-price-button">BEST PRICE</button>
+
+  <!-- Agate Phone Grip Button - Twice the size of Best Price -->
+  <button class="product-name-button">Agate Phone Grip</button>
+
+  <!-- Price in the same line -->
+  <div class="price-container">
+      <span class="old-price">$44.50</span>
+      <span class="new-price">$19.50</span>
+  </div>
+  <div class="product-description-container">
+    <p class="product-description-text">
+        These Pop Rock Crystal grip tops can be swapped with<br>
+        other tops depending on your mood, outfit, nails,<br>
+        phone case, holiday, etc.! Just gently squeeze the sides<br>
+        to remove and swap out with another color or design!
+    </p>
+</div>
+
+    <button class="buy-now-button">BUY NOW</button>
+</div>
+</div>
+
+
+
+<div class="circle-background">
+  <!-- Your circular element here -->
+  <div class="circle-container">
+    <div class="outer-circle">
+        <div class="inner-circle">
+            <img src="image9.png" alt="Image in Circle" class="circle-image">
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="gradient-background"></div>
+
+<footer class="footer">
+  <!-- Your footer content here -->
+  
+</footer>
+
+
+
+
+  </body>
+</html>
